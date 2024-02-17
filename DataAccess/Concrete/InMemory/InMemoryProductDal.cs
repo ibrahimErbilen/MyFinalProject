@@ -32,7 +32,7 @@ namespace DataAccess.Concrete.InMemory
 
         public void Delete(Product product)
         {
-            
+
             //foreach (var p in _products) 
             //{
             //    if (p.ProductId == product.ProductId)
@@ -42,7 +42,7 @@ namespace DataAccess.Concrete.InMemory
             //}
 
             //LINQ
-            Product productToDelete = _products.SingleOrDefault(p=>p.ProductId == product.ProductId);
+            Product productToDelete = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
             _products.Remove(productToDelete);
 
             
@@ -71,7 +71,7 @@ namespace DataAccess.Concrete.InMemory
         public void Update(Product product)
         {
             //Gönderdiğim ürün idsini bul
-            Product productToUpdate = _products.SingleOrDefault(p=>p.ProductId == product.ProductId);
+            Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
             productToUpdate.ProductName = product.ProductName;
             productToUpdate.CategoryId = product.CategoryId;
             productToUpdate.UnitPrice = product.UnitPrice;
