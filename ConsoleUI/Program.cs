@@ -1,6 +1,6 @@
-﻿using Business.Concreate;
-using DataAccess.Concreate.InMemory;
-using Entities.Concreate;
+﻿using Business.Concrete;
+using DataAccess.Concrete.InMemory;
+using Entities.Concrete;
 using System;
 
 namespace ConsoleUI
