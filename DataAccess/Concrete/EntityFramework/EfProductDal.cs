@@ -31,5 +31,10 @@ namespace DataAccess.Concrete.EntityFramework
                 return result.ToList();
             }
         }
+
+        public List<Product> GetProductDetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
