@@ -36,5 +36,10 @@ namespace DataAccess.Concrete.EntityFramework
         {
             throw new NotImplementedException();
         }
+
+        List<ProductDetailDto> IProductDal.GetProductDetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -89,5 +89,10 @@ namespace DataAccess.Concrete.InMemory
             productToUpdate.UnitsInStock = product.UnitsInStock;
             
         }
+
+        List<ProductDetailDto> IProductDal.GetProductDetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
